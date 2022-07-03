@@ -1,4 +1,122 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-03T11:58:42-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Quantum Physics Blog</title><subtitle>Documenting my progress as I learn quantum physics. </subtitle><entry><title type="html">Decomposing Tensor Products</title><link href="http://localhost:4000/2022/07/03/decomposing-tensor-products.html" rel="alternate" type="text/html" title="Decomposing Tensor Products" /><published>2022-07-03T00:00:00-04:00</published><updated>2022-07-03T00:00:00-04:00</updated><id>http://localhost:4000/2022/07/03/decomposing-tensor-products</id><content type="html" xml:base="http://localhost:4000/2022/07/03/decomposing-tensor-products.html"><![CDATA[]]></content><author><name></name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Bra-ket notation</title><link href="http://localhost:4000/math,/quantum/mechanics/2022/03/06/bra-ket-notation.html" rel="alternate" type="text/html" title="Bra-ket notation" /><published>2022-03-06T13:20:28-05:00</published><updated>2022-03-06T13:20:28-05:00</updated><id>http://localhost:4000/math,/quantum/mechanics/2022/03/06/bra-ket-notation</id><content type="html" xml:base="http://localhost:4000/math,/quantum/mechanics/2022/03/06/bra-ket-notation.html"><![CDATA[<p>Bra-ket notation provides a convenient way to denote quantum states. It takes the form \(\langle f\vert v \rangle\), where \(\langle f\vert\) refers to the “bra” and \(\vert v\rangle\) refers to the “ket”.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-03T12:14:11-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Quantum Physics Blog</title><subtitle>Documenting my progress as I learn quantum physics. </subtitle><entry><title type="html">Decomposing Tensor Products</title><link href="http://localhost:4000/tensor/products/2022/07/03/decomposing-tensor-products.html" rel="alternate" type="text/html" title="Decomposing Tensor Products" /><published>2022-07-03T01:00:00-04:00</published><updated>2022-07-03T01:00:00-04:00</updated><id>http://localhost:4000/tensor/products/2022/07/03/decomposing-tensor-products</id><content type="html" xml:base="http://localhost:4000/tensor/products/2022/07/03/decomposing-tensor-products.html"><![CDATA[<h1 id="angular-momentum">Angular Momentum</h1>
+
+<h2 id="the-pauli-matrices">The Pauli Matrices</h2>
+
+\[J_x = \dfrac{1}{2}\begin{pmatrix}
+0 &amp; 1 \\
+1 &amp; 0
+\end{pmatrix}\]
+
+\[J_y = \dfrac{1}{2}\begin{pmatrix}
+0 &amp; -i \\
+i &amp; 0
+\end{pmatrix}\]
+
+\[J_z = \dfrac{1}{2}\begin{pmatrix}
+1 &amp; 0 \\
+0 &amp; -1
+\end{pmatrix}\]
+
+<p>\(J^2 = J_x^2 + J_y^2 + J_z^2\)
+\(J_{\pm} = J_x \pm iJ_y\)</p>
+
+<p>Commutator relation \([J_x,J_y] = 2iJ_z\)</p>
+
+\[J_x + iJ_y = \dfrac{1}{2}\begin{pmatrix}
+0 &amp; 1 \\
+0 &amp; 0
+\end{pmatrix}\]
+
+<h2 id="2-spin-systems">2 Spin Systems</h2>
+
+<p>2 systems, spin-\(\dfrac{1}{2}\) yields \(V_A \otimes V_B\) 
+Working in the z-basis, we may write:
+\(J_{z,total} = JzA \otimes I + I \otimes JzB\)</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>For spin-\(\dfrac{1}{2}\) we have $$</td>
+      <td>j = 1/2, m\rangle\(and the relation\)J_+J_- = J^2 - J_z^2 + \hbar J_z$$</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Applying J^2 to $$</td>
+      <td>j, m\rangle\(in general yields\)J^2</td>
+      <td>j, m\rangle = j(j+1)</td>
+      <td>j, m\rangle$$</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>In combining these states, we can postulate which state in the four-dimensional compound state-space will have the most negative z-component of angular momentum: intuitively, it should be $$</td>
+      <td>-\rangle \otimes</td>
+      <td>-\rangle$$,</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="basis-for-4-d-space">Basis for 4-D Space</h2>
+
+<table>
+  <tbody>
+    <tr>
+      <td>so that $$J^2</td>
+      <td>1/2, -1/2\rangle \otimes</td>
+      <td>1/2, -1/2\rangle\(=\)-1</td>
+      <td>1/2, -1/2\rangle \otimes</td>
+      <td>1/2, -1/2\rangle$$; -1 is an eigenvalue.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>\(J^2\) and \(J_z\) both acting on the state</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Hence we can write $$</td>
+      <td>1/2, -1/2\rangle \otimes</td>
+      <td>1/2, -1/2\rangle =</td>
+      <td>j = 1, m = -1\rangle.$$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>To this lowest state we successively apply the raising operator \(J_+\): 
+(include full written calculations here as well)
+\(J_+|1, -1\rangle = |1, 0\rangle\)
+which corresponds to the state \(\dfrac{1}{\sqrt{2}}|+-\rangle + |-+\rangle\)
+and applying it once more gives: 
+\(J_+|1, 0\rangle = |1, 1\rangle\) which is the maximal \(|++\rangle\) state.</p>
+
+<p>Now we have three states, but our state space is four-dimensional - we are missing one basis vector, which must also be orthogonal. Since the values for \(j = 1\) are exhausted, then we must have \(j = 0\) and hence \(m = 0\) because \(m\) is bounded by \(\pm j\).</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Thus, to construct the fourth state, we must take</td>
+      <td>0, 0&gt; corresponding to</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>$$\dfrac{1}{\sqrt{2}}</td>
+      <td>+-\rangle -</td>
+      <td>-+\rangle$$.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For a fixed value of j, the range of values (and hence the dimension of the vector space) that m can take on are within \(\pm j; 2j + 1\) values.</p>
+
+<p>In this decomposition, we have written the four-dimensional compound state space, i.e. the tensor product of two 2-dimensional spaces as the direct sum of a three-dimensional and one-dimensional space respectively. This is one case of the Clebsch-Gordan decomposition.</p>]]></content><author><name></name></author><category term="tensor" /><category term="products" /><summary type="html"><![CDATA[Angular Momentum]]></summary></entry><entry><title type="html">Bra-ket notation</title><link href="http://localhost:4000/math,/quantum/mechanics/2022/03/06/bra-ket-notation.html" rel="alternate" type="text/html" title="Bra-ket notation" /><published>2022-03-06T13:20:28-05:00</published><updated>2022-03-06T13:20:28-05:00</updated><id>http://localhost:4000/math,/quantum/mechanics/2022/03/06/bra-ket-notation</id><content type="html" xml:base="http://localhost:4000/math,/quantum/mechanics/2022/03/06/bra-ket-notation.html"><![CDATA[<p>Bra-ket notation provides a convenient way to denote quantum states. It takes the form \(\langle f\vert v \rangle\), where \(\langle f\vert\) refers to the “bra” and \(\vert v\rangle\) refers to the “ket”.</p>
 
 <p>Let V be an abstract complex vector space with inner product.</p>
 
