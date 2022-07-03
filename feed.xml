@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-02-27T16:01:45-05:00</updated><id>/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="/jekyll/update/2022/02/27/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-02-27T15:40:28-05:00</published><updated>2022-02-27T15:40:28-05:00</updated><id>/jekyll/update/2022/02/27/welcome-to-jekyll</id><content type="html" xml:base="/jekyll/update/2022/02/27/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-03T11:58:42-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Quantum Physics Blog</title><subtitle>Documenting my progress as I learn quantum physics. </subtitle><entry><title type="html">Decomposing Tensor Products</title><link href="http://localhost:4000/2022/07/03/decomposing-tensor-products.html" rel="alternate" type="text/html" title="Decomposing Tensor Products" /><published>2022-07-03T00:00:00-04:00</published><updated>2022-07-03T00:00:00-04:00</updated><id>http://localhost:4000/2022/07/03/decomposing-tensor-products</id><content type="html" xml:base="http://localhost:4000/2022/07/03/decomposing-tensor-products.html"><![CDATA[]]></content><author><name></name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Bra-ket notation</title><link href="http://localhost:4000/math,/quantum/mechanics/2022/03/06/bra-ket-notation.html" rel="alternate" type="text/html" title="Bra-ket notation" /><published>2022-03-06T13:20:28-05:00</published><updated>2022-03-06T13:20:28-05:00</updated><id>http://localhost:4000/math,/quantum/mechanics/2022/03/06/bra-ket-notation</id><content type="html" xml:base="http://localhost:4000/math,/quantum/mechanics/2022/03/06/bra-ket-notation.html"><![CDATA[<p>Bra-ket notation provides a convenient way to denote quantum states. It takes the form \(\langle f\vert v \rangle\), where \(\langle f\vert\) refers to the “bra” and \(\vert v\rangle\) refers to the “ket”.</p>
+
+<p>Let V be an abstract complex vector space with inner product.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>A ket describes a vector \(v\), in V. With regard to the Stern-Gerlach experiment, it is the reason for the notations</td>
+      <td>+z&gt; and</td>
+      <td>-z&gt; to write the two possible states.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A bra describes a linear functional on C, that is, a linear map f:V -&gt; C. It is also known as a covector: the set of all linear functionals of a space V to its “base field” (in this case, the complex numbers) is itself a vector space. It is referred to as the “dual space”, and it is frequently written as V*.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>When a bra acts on a ket, the resultant value is a complex scalar, and it is denoted &lt;f</td>
+      <td>v&gt;. Now suppose that V is a vector space with inner product: a map (,): V x V -&gt; K (K denoting the base field, and K = C for the example above) that satisfies the axioms of conjugate symmetry, positive-definiteness, and linearity in at least one argument. The last condition is written generally because in terms of linearity, physicists tend to use the opposite convention as mathematicians: they suppose linearity in the second argument rather than the first. This convention shall be adopted hereafter in this blog.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Consider the vector space C^n. Vectors in C^n can be identified by writing them in columns; these are the kets. Similarly, bras are written as row vectors. More specifically, the correspondence between bra and ket vectors is given by conjugate transposition.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pjsXMwmWwyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>]]></content><author><name></name></author><category term="math," /><category term="quantum" /><category term="mechanics" /><summary type="html"><![CDATA[Bra-ket notation provides a convenient way to denote quantum states. It takes the form \(\langle f\vert v \rangle\), where \(\langle f\vert\) refers to the “bra” and \(\vert v\rangle\) refers to the “ket”.]]></summary></entry><entry><title type="html">Introduction</title><link href="http://localhost:4000/jekyll/update/2022/03/06/introduction.html" rel="alternate" type="text/html" title="Introduction" /><published>2022-03-06T13:20:28-05:00</published><updated>2022-03-06T13:20:28-05:00</updated><id>http://localhost:4000/jekyll/update/2022/03/06/introduction</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/03/06/introduction.html"><![CDATA[<p>The Stern-Gerlach experiment, performed in 1922 by Walther Gerlach after its conception by Otto Stern the year prior, demonstrated the quantization of angular momentum. It consisted of a collimated beam of silver atoms that was sent through a perpendicular, inhomogenous magnetic field.</p>
+
+<p>A particle moving through space possesses an (orbital) angular velocity, expressed as the following vector cross product:</p>
+
+\[L = r x p\]
+
+<p>where r, p are the position vector and the momentum respectively.</p>
+
+<p>When describing a <em>charged</em> particle’s motion, it has a corresponding <em>dipole moment</em>, which is measured by the strength of the resultant magnetic field. It is given by:</p>
+
+\[{mu}_L = qL/2m\]
+
+<p>Since the magnetic field was specifically inhomogeneous, say, directed in the z-direction: it will cause the particles to <em>precess</em> about the z-axis, and exert a force:</p>
+
+\[F_z = {mu}*∂B/∂z\]
+
+<table>
+  <tbody>
+    <tr>
+      <td>Classically, the expression {mu}_z =</td>
+      <td>{mu}</td>
+      <td>*cos({theta}) indicates that one might expect a continuous range of values after the atoms are projected. Silver has an atomic number of 47. 46 of its electrons form a closed shell about its nucleus, and atomic theory dictates that the magnetic moment of a silver atom is essentially due to the magnetic moment exhibited by its single valence electron.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>However, only <em>two</em> discrete values were observed. This “intrinsic” angular momentum refers to a particulate-level phenomenon known as “spin”.</p>
+
+<p>There were four subsequent experiments conducted after this first one, involving multiple Stern-Gerlach apparatuses.</p>
+
+<p>The First Experiment: 
+In the first experiment, two identical Stern-Gerlach devices were placed in a row. After the collimated beam passes through the first device, it evenly splits into “spin-up” and “spin-down” polarities (positive and negative respectively). Then, if the particles with positive spin were sent into the second device, the observed effect was not the two discrete values as in the first experiment, rather, it was that only the positive-spin particles were emitted, as if the machine “preserved” polarity of spin.</p>
+
+<p>The Second Experiment: 
+In the second experiment, two Stern-Gerlach devices were once again employed, except the latter one would have a polarization different from the first (for example: the first one z-polarized, the second one x-polarized). When the beam passes through the first machine, it separated into spin-up and spin-down rays, with respect to the z-direction. Now, only the spin-up beam gets sent into the second, x-oriented Stern-Gerlach machine. The observed result is that the z-machine has no effect on the output of the x-orientation: the spin-up beam splits into equally-partitioned spin-up and spin-down beams, except now polarized in the x-direction. In other words, these orthogonal orientations are seemingly independent.</p>
+
+<p>The Third Experiment: 
+Now, three Stern-Gerlach devices were</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[The Stern-Gerlach experiment, performed in 1922 by Walther Gerlach after its conception by Otto Stern the year prior, demonstrated the quantization of angular momentum. It consisted of a collimated beam of silver atoms that was sent through a perpendicular, inhomogenous magnetic field.]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2022/02/27/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-02-27T15:40:28-05:00</published><updated>2022-02-27T15:40:28-05:00</updated><id>http://localhost:4000/jekyll/update/2022/02/27/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/02/27/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+\[y = mx + b\]
 
 <p>Jekyll requires blog post files to be named according to the following format:</p>
 
