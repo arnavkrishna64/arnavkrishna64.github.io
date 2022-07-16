@@ -1,6 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-03T12:27:25-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Quantum Physics Blog</title><subtitle>Documenting my progress as I learn quantum physics. </subtitle><entry><title type="html">Decomposing Tensor Products</title><link href="http://localhost:4000/tensor/products/2022/07/03/decomposing-tensor-products.html" rel="alternate" type="text/html" title="Decomposing Tensor Products" /><published>2022-07-03T01:00:00-04:00</published><updated>2022-07-03T01:00:00-04:00</updated><id>http://localhost:4000/tensor/products/2022/07/03/decomposing-tensor-products</id><content type="html" xml:base="http://localhost:4000/tensor/products/2022/07/03/decomposing-tensor-products.html"><![CDATA[<h1 id="angular-momentum">Angular Momentum</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-07-16T12:20:44-04:00</updated><id>/feed.xml</id><title type="html">Quantum Physics Blog</title><subtitle>Documenting my progress as I learn quantum physics. </subtitle><entry><title type="html">Decomposing Tensor Products</title><link href="/tensor/products/2022/07/03/decomposing-tensor-products.html" rel="alternate" type="text/html" title="Decomposing Tensor Products" /><published>2022-07-03T01:00:00-04:00</published><updated>2022-07-03T01:00:00-04:00</updated><id>/tensor/products/2022/07/03/decomposing-tensor-products</id><content type="html" xml:base="/tensor/products/2022/07/03/decomposing-tensor-products.html"><![CDATA[<h1 id="angular-momentum">Angular Momentum</h1>
+
+<p>A classic example of where Clebsch-Gordan coefficients arise in physics is the decomposition of combined spin systems into direct sums of angular momentum representations.</p>
 
 <h2 id="the-pauli-matrices">The Pauli Matrices</h2>
+
+<p>For a single spin-\(\dfrac{1}{2}\) particle, the angular momentum operators are represented by the Pauli matrices, as follows:</p>
 
 \[J_x = \dfrac{1}{2}\begin{pmatrix}
 0 &amp; 1 \\
@@ -20,103 +24,60 @@ i &amp; 0
 <p>\(J^2 = J_x^2 + J_y^2 + J_z^2\)
 \(J_{\pm} = J_x \pm iJ_y\)</p>
 
-<p>Commutator relation \([J_x,J_y] = 2iJ_z\)</p>
+<p>The Pauli matrices satisfy the commutation relations: 
+\([J_x,J_y] = 2iJ_z\) (and cyclic permutations of the labels \(x, y, z\)). 
+\([J_{\pm}, J_z] =\)
+\([J^2, J_z] =\)</p>
 
 \[J_x + iJ_y = \dfrac{1}{2}\begin{pmatrix}
 0 &amp; 1 \\
 0 &amp; 0
 \end{pmatrix}\]
 
+<h2 id="general-angular-momentum-representations">General Angular Momentum Representations</h2>
+
+<p>(note - these properties hold in general rather than for this specific system): 
+add \(J^2, J_\{pm}, J_z\) and their corresponding actions</p>
+
 <h2 id="2-spin-systems">2 Spin Systems</h2>
 
-<p>2 systems, spin-\(\dfrac{1}{2}\) yields \(V_A \otimes V_B\) 
-Working in the z-basis, we may write:
-\(J_{z,total} = JzA \otimes I + I \otimes JzB\)</p>
+<p>For the particular case of combining 2 spin systems, we can explicitly write out the operators involved. Working in the z-basis, we may write:</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>For spin-\(\dfrac{1}{2}\) we have $$</td>
-      <td>j = 1/2, m\rangle\(and the relation\)J_+J_- = J^2 - J_z^2 + \hbar J_z$$</td>
-    </tr>
-  </tbody>
-</table>
+\[J_{z,total} = JzA \otimes I + I \otimes JzB\]
 
-<table>
-  <tbody>
-    <tr>
-      <td>Applying J^2 to $$</td>
-      <td>j, m\rangle\(in general yields\)J^2</td>
-      <td>j, m\rangle = j(j+1)</td>
-      <td>j, m\rangle$$</td>
-    </tr>
-  </tbody>
-</table>
+<p>In a similar manner, we can obtain all of the necessary angular momentum operators for such a 2-state system.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>In combining these states, we can postulate which state in the four-dimensional compound state-space will have the most negative z-component of angular momentum: intuitively, it should be $$</td>
-      <td>-\rangle \otimes</td>
-      <td>-\rangle$$,</td>
-    </tr>
-  </tbody>
-</table>
+<p>For spin-\(\dfrac{1}{2}\) we have \(\vert j = 1/2, m\rangle\) and the relation \(J_+J_- = J^2 - J_z^2 + \hbar J_z\)</p>
+
+<p>Applying \(J^2\) to \(\vert j, m\rangle\) in general yields \(J^2\vert j, m\rangle = j(j+1)\vert j, m\rangle\)</p>
+
+<p>In combining these states, we can postulate which state in the four-dimensional compound state-space will have the most negative z-component of angular momentum: intuitively, it should be \(\vert -\rangle \otimes \vert -\rangle\),</p>
 
 <h2 id="basis-for-4-d-space">Basis for 4-D Space</h2>
 
-<table>
-  <tbody>
-    <tr>
-      <td>so that $$J^2</td>
-      <td>1/2, -1/2\rangle \otimes</td>
-      <td>1/2, -1/2\rangle\(=\)-1</td>
-      <td>1/2, -1/2\rangle \otimes</td>
-      <td>1/2, -1/2\rangle$$; -1 is an eigenvalue.</td>
-    </tr>
-  </tbody>
-</table>
+<p>(note: be consistent w/ notation for the ket vectors)</p>
+
+<p>\(J^2\vert 1/2, -1/2\rangle \otimes \vert 1/2, -1/2\rangle = -1\vert 1/2, -1/2\rangle \otimes \vert 1/2, -1/2\rangle\); -1 is an eigenvalue.</p>
 
 <p>\(J^2\) and \(J_z\) both acting on the state</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>Hence we can write $$</td>
-      <td>1/2, -1/2\rangle \otimes</td>
-      <td>1/2, -1/2\rangle =</td>
-      <td>j = 1, m = -1\rangle.$$</td>
-    </tr>
-  </tbody>
-</table>
+<p>Hence we can write \(\vert 1/2, -1/2\rangle \otimes \vert 1/2, -1/2\rangle = \vert j = 1, m = -1\rangle.\)</p>
 
 <p>To this lowest state we successively apply the raising operator \(J_+\): 
 (include full written calculations here as well)
-\(J_+|1, -1\rangle = |1, 0\rangle\)
-which corresponds to the state \(\dfrac{1}{\sqrt{2}}|+-\rangle + |-+\rangle\)
+\(J_+\vert 1, -1\rangle = \vert 1, 0\rangle\)
+which corresponds to the state \(\dfrac{1}{\sqrt{2}}\vert +-\rangle + \vert -+\rangle\)
 and applying it once more gives: 
-\(J_+|1, 0\rangle = |1, 1\rangle\) which is the maximal \(|++\rangle\) state.</p>
+\(J_+\vert 1, 0\rangle = \vert 1, 1\rangle\) which is the maximal \(\vert ++\rangle\) state.</p>
 
 <p>Now we have three states, but our state space is four-dimensional - we are missing one basis vector, which must also be orthogonal. Since the values for \(j = 1\) are exhausted, then we must have \(j = 0\) and hence \(m = 0\) because \(m\) is bounded by \(\pm j\).</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>Thus, to construct the fourth state, we must take</td>
-      <td>0, 0&gt; corresponding to</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>$$\dfrac{1}{\sqrt{2}}</td>
-      <td>+-\rangle -</td>
-      <td>-+\rangle$$.</td>
-    </tr>
-  </tbody>
-</table>
+<p>Thus, to construct the fourth state, we must take \(\vert 0, 0 \rangle\) corresponding to
+\(\dfrac{1}{\sqrt{2}}\vert +-\rangle - \vert -+\rangle\).</p>
 
-<p>For a fixed value of j, the range of values (and hence the dimension of the vector space) that m can take on are within \(\pm j; 2j + 1\) values.</p>
+<p>For a fixed value of \(j\), the range of values (and hence the dimension of the vector space) that \(m\) can take on are within \(\pm j\); there are \(2j + 1\) values.</p>
 
-<p>In this decomposition, we have written the four-dimensional compound state space, i.e. the tensor product of two 2-dimensional spaces as the direct sum of a three-dimensional and one-dimensional space respectively. This is one case of the Clebsch-Gordan decomposition.</p>]]></content><author><name></name></author><category term="tensor" /><category term="products" /><summary type="html"><![CDATA[Angular Momentum]]></summary></entry><entry><title type="html">Bra-ket notation</title><link href="http://localhost:4000/math,/quantum/mechanics/2022/03/06/bra-ket-notation.html" rel="alternate" type="text/html" title="Bra-ket notation" /><published>2022-03-06T13:20:28-05:00</published><updated>2022-03-06T13:20:28-05:00</updated><id>http://localhost:4000/math,/quantum/mechanics/2022/03/06/bra-ket-notation</id><content type="html" xml:base="http://localhost:4000/math,/quantum/mechanics/2022/03/06/bra-ket-notation.html"><![CDATA[<p>Bra-ket notation provides a convenient way to denote quantum states. It takes the form \(\langle f\vert v \rangle\), where \(\langle f\vert\) refers to the “bra” and \(\vert v\rangle\) refers to the “ket”.</p>
+<p>In this decomposition, we have written the four-dimensional compound state space, i.e. the tensor product of two 2-dimensional spaces as the direct sum of a three-dimensional and one-dimensional space respectively. This is one case of the Clebsch-Gordan decomposition.</p>]]></content><author><name></name></author><category term="tensor" /><category term="products" /><summary type="html"><![CDATA[Angular Momentum]]></summary></entry><entry><title type="html">Bra-ket notation</title><link href="/math,/quantum/mechanics/2022/03/06/bra-ket-notation.html" rel="alternate" type="text/html" title="Bra-ket notation" /><published>2022-03-06T13:20:28-05:00</published><updated>2022-03-06T13:20:28-05:00</updated><id>/math,/quantum/mechanics/2022/03/06/bra-ket-notation</id><content type="html" xml:base="/math,/quantum/mechanics/2022/03/06/bra-ket-notation.html"><![CDATA[<p>Bra-ket notation provides a convenient way to denote quantum states. It takes the form \(\langle f\vert v \rangle\), where \(\langle f\vert\) refers to the “bra” and \(\vert v\rangle\) refers to the “ket”.</p>
 
 <p>Let V be an abstract complex vector space with inner product.</p>
 
@@ -143,7 +104,7 @@ and applying it once more gives:
 
 <p>Consider the vector space C^n. Vectors in C^n can be identified by writing them in columns; these are the kets. Similarly, bras are written as row vectors. More specifically, the correspondence between bra and ket vectors is given by conjugate transposition.</p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pjsXMwmWwyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>]]></content><author><name></name></author><category term="math," /><category term="quantum" /><category term="mechanics" /><summary type="html"><![CDATA[Bra-ket notation provides a convenient way to denote quantum states. It takes the form \(\langle f\vert v \rangle\), where \(\langle f\vert\) refers to the “bra” and \(\vert v\rangle\) refers to the “ket”.]]></summary></entry><entry><title type="html">Introduction</title><link href="http://localhost:4000/jekyll/update/2022/03/06/introduction.html" rel="alternate" type="text/html" title="Introduction" /><published>2022-03-06T13:20:28-05:00</published><updated>2022-03-06T13:20:28-05:00</updated><id>http://localhost:4000/jekyll/update/2022/03/06/introduction</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/03/06/introduction.html"><![CDATA[<p>The Stern-Gerlach experiment, performed in 1922 by Walther Gerlach after its conception by Otto Stern the year prior, demonstrated the quantization of angular momentum. It consisted of a collimated beam of silver atoms that was sent through a perpendicular, inhomogenous magnetic field.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pjsXMwmWwyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>]]></content><author><name></name></author><category term="math," /><category term="quantum" /><category term="mechanics" /><summary type="html"><![CDATA[Bra-ket notation provides a convenient way to denote quantum states. It takes the form \(\langle f\vert v \rangle\), where \(\langle f\vert\) refers to the “bra” and \(\vert v\rangle\) refers to the “ket”.]]></summary></entry><entry><title type="html">Introduction</title><link href="/jekyll/update/2022/03/06/introduction.html" rel="alternate" type="text/html" title="Introduction" /><published>2022-03-06T13:20:28-05:00</published><updated>2022-03-06T13:20:28-05:00</updated><id>/jekyll/update/2022/03/06/introduction</id><content type="html" xml:base="/jekyll/update/2022/03/06/introduction.html"><![CDATA[<p>The Stern-Gerlach experiment, performed in 1922 by Walther Gerlach after its conception by Otto Stern the year prior, demonstrated the quantization of angular momentum. It consisted of a collimated beam of silver atoms that was sent through a perpendicular, inhomogenous magnetic field.</p>
 
 <p>A particle moving through space possesses an (orbital) angular velocity, expressed as the following vector cross product:</p>
 
@@ -180,7 +141,7 @@ In the first experiment, two identical Stern-Gerlach devices were placed in a ro
 In the second experiment, two Stern-Gerlach devices were once again employed, except the latter one would have a polarization different from the first (for example: the first one z-polarized, the second one x-polarized). When the beam passes through the first machine, it separated into spin-up and spin-down rays, with respect to the z-direction. Now, only the spin-up beam gets sent into the second, x-oriented Stern-Gerlach machine. The observed result is that the z-machine has no effect on the output of the x-orientation: the spin-up beam splits into equally-partitioned spin-up and spin-down beams, except now polarized in the x-direction. In other words, these orthogonal orientations are seemingly independent.</p>
 
 <p>The Third Experiment: 
-Now, three Stern-Gerlach devices were</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[The Stern-Gerlach experiment, performed in 1922 by Walther Gerlach after its conception by Otto Stern the year prior, demonstrated the quantization of angular momentum. It consisted of a collimated beam of silver atoms that was sent through a perpendicular, inhomogenous magnetic field.]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2022/02/27/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-02-27T15:40:28-05:00</published><updated>2022-02-27T15:40:28-05:00</updated><id>http://localhost:4000/jekyll/update/2022/02/27/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/02/27/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+Now, three Stern-Gerlach devices were</p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[The Stern-Gerlach experiment, performed in 1922 by Walther Gerlach after its conception by Otto Stern the year prior, demonstrated the quantization of angular momentum. It consisted of a collimated beam of silver atoms that was sent through a perpendicular, inhomogenous magnetic field.]]></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="/jekyll/update/2022/02/27/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2022-02-27T15:40:28-05:00</published><updated>2022-02-27T15:40:28-05:00</updated><id>/jekyll/update/2022/02/27/welcome-to-jekyll</id><content type="html" xml:base="/jekyll/update/2022/02/27/welcome-to-jekyll.html"><![CDATA[<p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 
 \[y = mx + b\]
 

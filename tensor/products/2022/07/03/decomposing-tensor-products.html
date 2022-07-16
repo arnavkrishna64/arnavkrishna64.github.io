@@ -9,17 +9,17 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Angular Momentum" />
 <meta property="og:description" content="Angular Momentum" />
-<link rel="canonical" href="http://localhost:4000/tensor/products/2022/07/03/decomposing-tensor-products.html" />
-<meta property="og:url" content="http://localhost:4000/tensor/products/2022/07/03/decomposing-tensor-products.html" />
+<link rel="canonical" href="/tensor/products/2022/07/03/decomposing-tensor-products.html" />
+<meta property="og:url" content="/tensor/products/2022/07/03/decomposing-tensor-products.html" />
 <meta property="og:site_name" content="Quantum Physics Blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-07-03T01:00:00-04:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Decomposing Tensor Products" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-07-03T01:00:00-04:00","datePublished":"2022-07-03T01:00:00-04:00","description":"Angular Momentum","headline":"Decomposing Tensor Products","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tensor/products/2022/07/03/decomposing-tensor-products.html"},"url":"http://localhost:4000/tensor/products/2022/07/03/decomposing-tensor-products.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-07-03T01:00:00-04:00","datePublished":"2022-07-03T01:00:00-04:00","description":"Angular Momentum","headline":"Decomposing Tensor Products","mainEntityOfPage":{"@type":"WebPage","@id":"/tensor/products/2022/07/03/decomposing-tensor-products.html"},"url":"/tensor/products/2022/07/03/decomposing-tensor-products.html"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Quantum Physics Blog" /><!-- for mathjax support -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Quantum Physics Blog" /><!-- for mathjax support -->
     
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -54,7 +54,11 @@
   <div class="post-content e-content" itemprop="articleBody">
     <h1 id="angular-momentum">Angular Momentum</h1>
 
+<p>A classic example of where Clebsch-Gordan coefficients arise in physics is the decomposition of combined spin systems into direct sums of angular momentum representations.</p>
+
 <h2 id="the-pauli-matrices">The Pauli Matrices</h2>
+
+<p>For a single spin-\(\dfrac{1}{2}\) particle, the angular momentum operators are represented by the Pauli matrices, as follows:</p>
 
 \[J_x = \dfrac{1}{2}\begin{pmatrix}
 0 &amp; 1 \\
@@ -74,101 +78,58 @@ i &amp; 0
 <p>\(J^2 = J_x^2 + J_y^2 + J_z^2\)
 \(J_{\pm} = J_x \pm iJ_y\)</p>
 
-<p>Commutator relation \([J_x,J_y] = 2iJ_z\)</p>
+<p>The Pauli matrices satisfy the commutation relations: 
+\([J_x,J_y] = 2iJ_z\) (and cyclic permutations of the labels \(x, y, z\)). 
+\([J_{\pm}, J_z] =\)
+\([J^2, J_z] =\)</p>
 
 \[J_x + iJ_y = \dfrac{1}{2}\begin{pmatrix}
 0 &amp; 1 \\
 0 &amp; 0
 \end{pmatrix}\]
 
+<h2 id="general-angular-momentum-representations">General Angular Momentum Representations</h2>
+
+<p>(note - these properties hold in general rather than for this specific system): 
+add \(J^2, J_\{pm}, J_z\) and their corresponding actions</p>
+
 <h2 id="2-spin-systems">2 Spin Systems</h2>
 
-<p>2 systems, spin-\(\dfrac{1}{2}\) yields \(V_A \otimes V_B\) 
-Working in the z-basis, we may write:
-\(J_{z,total} = JzA \otimes I + I \otimes JzB\)</p>
+<p>For the particular case of combining 2 spin systems, we can explicitly write out the operators involved. Working in the z-basis, we may write:</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>For spin-\(\dfrac{1}{2}\) we have $$</td>
-      <td>j = 1/2, m\rangle\(and the relation\)J_+J_- = J^2 - J_z^2 + \hbar J_z$$</td>
-    </tr>
-  </tbody>
-</table>
+\[J_{z,total} = JzA \otimes I + I \otimes JzB\]
 
-<table>
-  <tbody>
-    <tr>
-      <td>Applying J^2 to $$</td>
-      <td>j, m\rangle\(in general yields\)J^2</td>
-      <td>j, m\rangle = j(j+1)</td>
-      <td>j, m\rangle$$</td>
-    </tr>
-  </tbody>
-</table>
+<p>In a similar manner, we can obtain all of the necessary angular momentum operators for such a 2-state system.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>In combining these states, we can postulate which state in the four-dimensional compound state-space will have the most negative z-component of angular momentum: intuitively, it should be $$</td>
-      <td>-\rangle \otimes</td>
-      <td>-\rangle$$,</td>
-    </tr>
-  </tbody>
-</table>
+<p>For spin-\(\dfrac{1}{2}\) we have \(\vert j = 1/2, m\rangle\) and the relation \(J_+J_- = J^2 - J_z^2 + \hbar J_z\)</p>
+
+<p>Applying \(J^2\) to \(\vert j, m\rangle\) in general yields \(J^2\vert j, m\rangle = j(j+1)\vert j, m\rangle\)</p>
+
+<p>In combining these states, we can postulate which state in the four-dimensional compound state-space will have the most negative z-component of angular momentum: intuitively, it should be \(\vert -\rangle \otimes \vert -\rangle\),</p>
 
 <h2 id="basis-for-4-d-space">Basis for 4-D Space</h2>
 
-<table>
-  <tbody>
-    <tr>
-      <td>so that $$J^2</td>
-      <td>1/2, -1/2\rangle \otimes</td>
-      <td>1/2, -1/2\rangle\(=\)-1</td>
-      <td>1/2, -1/2\rangle \otimes</td>
-      <td>1/2, -1/2\rangle$$; -1 is an eigenvalue.</td>
-    </tr>
-  </tbody>
-</table>
+<p>(note: be consistent w/ notation for the ket vectors)</p>
+
+<p>\(J^2\vert 1/2, -1/2\rangle \otimes \vert 1/2, -1/2\rangle = -1\vert 1/2, -1/2\rangle \otimes \vert 1/2, -1/2\rangle\); -1 is an eigenvalue.</p>
 
 <p>\(J^2\) and \(J_z\) both acting on the state</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>Hence we can write $$</td>
-      <td>1/2, -1/2\rangle \otimes</td>
-      <td>1/2, -1/2\rangle =</td>
-      <td>j = 1, m = -1\rangle.$$</td>
-    </tr>
-  </tbody>
-</table>
+<p>Hence we can write \(\vert 1/2, -1/2\rangle \otimes \vert 1/2, -1/2\rangle = \vert j = 1, m = -1\rangle.\)</p>
 
 <p>To this lowest state we successively apply the raising operator \(J_+\): 
 (include full written calculations here as well)
-\(J_+|1, -1\rangle = |1, 0\rangle\)
-which corresponds to the state \(\dfrac{1}{\sqrt{2}}|+-\rangle + |-+\rangle\)
+\(J_+\vert 1, -1\rangle = \vert 1, 0\rangle\)
+which corresponds to the state \(\dfrac{1}{\sqrt{2}}\vert +-\rangle + \vert -+\rangle\)
 and applying it once more gives: 
-\(J_+|1, 0\rangle = |1, 1\rangle\) which is the maximal \(|++\rangle\) state.</p>
+\(J_+\vert 1, 0\rangle = \vert 1, 1\rangle\) which is the maximal \(\vert ++\rangle\) state.</p>
 
 <p>Now we have three states, but our state space is four-dimensional - we are missing one basis vector, which must also be orthogonal. Since the values for \(j = 1\) are exhausted, then we must have \(j = 0\) and hence \(m = 0\) because \(m\) is bounded by \(\pm j\).</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>Thus, to construct the fourth state, we must take</td>
-      <td>0, 0&gt; corresponding to</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>$$\dfrac{1}{\sqrt{2}}</td>
-      <td>+-\rangle -</td>
-      <td>-+\rangle$$.</td>
-    </tr>
-  </tbody>
-</table>
+<p>Thus, to construct the fourth state, we must take \(\vert 0, 0 \rangle\) corresponding to
+\(\dfrac{1}{\sqrt{2}}\vert +-\rangle - \vert -+\rangle\).</p>
 
-<p>For a fixed value of j, the range of values (and hence the dimension of the vector space) that m can take on are within \(\pm j; 2j + 1\) values.</p>
+<p>For a fixed value of \(j\), the range of values (and hence the dimension of the vector space) that \(m\) can take on are within \(\pm j\); there are \(2j + 1\) values.</p>
 
 <p>In this decomposition, we have written the four-dimensional compound state space, i.e. the tensor product of two 2-dimensional spaces as the direct sum of a three-dimensional and one-dimensional space respectively. This is one case of the Clebsch-Gordan decomposition.</p>
 
